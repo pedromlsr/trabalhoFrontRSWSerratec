@@ -23,13 +23,15 @@
   <body>
     <nav id="navigation">
       <div class="wrapper">
-        <div class="logo">
-          <img src="./assets/img/logo.png" alt="Logo" />
+        <div class="logo-fixed">
+          <div class="logo">
+            <img src="./assets/img/logo.png" alt="Logo" />
 
-          <span class="logo-text">
-            <span class="logo-text-pink">bg.</span
-            ><span class="logo-text-black">rental</span>
-          </span>
+            <span class="logo-text">
+              <span class="logo-text-pink">bg.</span
+              ><span class="logo-text-black">rental</span>
+            </span>
+          </div>
         </div>
 
         <div class="menu">
@@ -64,13 +66,14 @@
               />
             </svg>
           </button>
-          <!-- TODO Renomear os ids e alterar no CSS -->
-          <div class="dropdown-menu">
+
+          <div class="section-menu">
             <ul>
               <li><a href="#home">Home</a></li>
-              <li><a href="#services">Collection</a></li>
+              <li><a href="#collection">Collection</a></li>
               <li><a href="#about">About</a></li>
               <li><a href="#contact">Contact</a></li>
+              <li><a href="#register">Register</a></li>
             </ul>
           </div>
         </div>
@@ -79,34 +82,40 @@
 
     <section id="home">
       <div class="wrapper">
-        <header>
-          <h4>Welcome to <span class="logo-text">bg.rental</span>! 👋</h4>
-          <h1>Renting boardgames has never been so easy</h1>
-        </header>
-        <p>
-          Grew tired of the old monopoly? <br />
-          Don't have time for endless war matches? <br />
-          Think modern boardgames are too expensive? <br />
-        </p>
-        <h4>How about trying something new?</h4>
+        <div>
+          <header>
+            <h4>Welcome to <span class="logo-text">bg.rental</span>! 👋</h4>
+            <h1>Renting boardgames has never been so easy</h1>
+          </header>
+          <p>
+            Grew tired of the old monopoly? <br />
+            Don't have time for endless war matches? <br />
+            Think modern boardgames are too expensive? <br />
+          </p>
+          <h4>How about trying something new?</h4>
+        </div>
+
         <img
-          src="./assets/img/imagem1.jpg"
+          src="./assets/img/img-home.jpg"
           alt="três bonecos do monopoly no estilo cego, surdo e mudo"
         />
       </div>
     </section>
 
-    <section id="services">
+    <section id="collection">
       <div class="wrapper">
-        <header>
-          <h4>Boardgames are for everyone!</h4>
-          <h1>Take your time exploring our diverse collection</h1>
-        </header>
-        <p>
-          Find games for every taste and occasion. <br />
-          Save money, try many games before buying. <br />
-          Share with your friends and family for a great time.
-        </p>
+        <div>
+          <header>
+            <h4>Boardgames are for everyone!</h4>
+            <h1>Take your time exploring our diverse collection</h1>
+          </header>
+          <p>
+            Find games for every taste and occasion. <br />
+            Save money, try many games before buying. <br />
+            Share with your friends and family for a great time.
+          </p>
+        </div>
+
         <div class="cards">
           <!-- TODO Efeito dropdown com mais informações sobre os jogos. -->
           <!-- TODO Colocar link com ícone para BGG. -->
@@ -170,20 +179,22 @@
 
     <section id="about">
       <div class="wrapper">
-        <header>
-          <h4>Learn more about the dev behind this project!</h4>
-          <h1>Pedro Macacchero Lago de Sá Rodrigues</h1>
-        </header>
-        <p>
-          <i>
-            Pedro's 28, graduated in geology and specialized in geographic
-            information systems. He's now venturing deeper in the tech world,
-            diving in an intense and immersive experience by attending a
-            residency program for software developing offered by SERRATEC. What
-            you might have never guessed is that he's a bit of a boardgame
-            enthusiast. (wow, what a surprise!)</i
-          >
-        </p>
+        <div>
+          <header>
+            <h4>Learn more about the dev behind this project!</h4>
+            <h1>Pedro Macacchero Lago de Sá Rodrigues</h1>
+          </header>
+          <p>
+            <i>
+              Pedro's 28, graduated in geology and specialized in geographic
+              information systems. He's now venturing deeper in the tech world,
+              diving in an intense and immersive experience by attending a
+              residency program for software developing offered by SERRATEC.
+              What you might have never guessed is that he's a bit of a
+              boardgame enthusiast. (wow, what a surprise!)</i
+            >
+          </p>
+        </div>
 
         <img src="./assets/img/perfil.png" alt="Foto do desenvolvedor" />
       </div>
@@ -194,13 +205,13 @@
         <header>
           <h4>Talk to us for a personalized experience</h4>
           <h1>Send a message to our whatsapp informing the game you want</h1>
-          <p>
-            Currently, the only available way to rent games is by contact
-            through whatsapp. This is due to our platform still being in
-            development. Soon enough it'll be operational and you'll have the
-            power to rent games with a few clicks!
-          </p>
         </header>
+        <p>
+          Currently, the only available way to rent games is by contact through
+          whatsapp. This is due to our platform still being in development. Soon
+          enough it'll be operational and you'll have the power to rent games
+          with a few clicks!
+        </p>
 
         <div class="whatsapp">
           <a href="https://wa.me/5524987654321" target="_blank">
@@ -219,7 +230,11 @@
             Rent / reserve a game
           </a>
         </div>
+      </div>
+    </section>
 
+    <section id="register">
+      <div class="wrapper">
         <header>
           <h4>Want to contribute to our collection?</h4>
           <h1>We are interested in expanding</h1>
@@ -230,6 +245,7 @@
           them for rent?
         </p>
         <h4>Fill in our form to sell or register your games for renting:</h4>
+
         <form action="#" method="post">
           <!-- <div class="title">Welcome</div> -->
           <div class="subtitle">Are you interested in selling or renting?</div>
@@ -282,16 +298,16 @@
 
           <div class="input-container ic">
             <!-- <textarea
-              id="games"
-              class="input"
-              placeholder=" "
-              required
-              style="padding-top: 0.5rem"
-            ></textarea>
-            <div class="cut"></div>
-            <label for="games" class="placeholder"
-              >List the name of your games...</label
-            > -->
+                id="games"
+                class="input"
+                placeholder=" "
+                required
+                style="padding-top: 0.5rem"
+              ></textarea>
+              <div class="cut"></div>
+              <label for="games" class="placeholder"
+                >List the name of your games...</label
+              > -->
 
             <input id="games" class="input" type="text" placeholder=" " />
             <div class="cut"></div>
