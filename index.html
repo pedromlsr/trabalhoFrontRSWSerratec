@@ -146,7 +146,7 @@
 
         <img
           src="./assets/img/img-home.jpg"
-          alt="três bonecos do monopoly no estilo cego, surdo e mudo"
+          alt="Three Monopoly characters in blind, deaf, mute position"
         />
       </div>
     </section>
@@ -166,14 +166,11 @@
         </div>
 
         <div class="cards">
-          <!-- TODO Efeito dropdown com mais informações sobre os jogos. -->
-          <!-- TODO Colocar link com ícone para BGG. -->
           <div class="card">
             <img
               src="https://cf.geekdo-images.com/RvFVTEpnbb4NM7k0IF8V7A__thumb/img/ZlG_SRFChObHenw79fAve56_mnk=/fit-in/200x150/filters:strip_icc()/pic860217.jpg"
               alt="7wonders"
             />
-            <!-- <h3>7 Wonders</h3> -->
             <p>Status: <span class="available">Available</span></p>
             <a href="#contact"><button>Rent now</button></a>
           </div>
@@ -182,7 +179,6 @@
               src="https://cf.geekdo-images.com/tz19PfklMdAdjxV9WArraA__thumb/img/debo694HgBaIBeNGyxu1ELUbQGA=/fit-in/200x150/filters:strip_icc()/pic3718275.jpg"
               alt="Azul"
             />
-            <!-- <h3>Azul</h3> -->
             <p>Status: <span class="rented">Rented</span></p>
             <a href="#contact"><button>Reserve for later</button></a>
           </div>
@@ -191,7 +187,6 @@
               src="https://cf.geekdo-images.com/cAPTkL2BR3snLO71dkH8rw__thumb/img/5lDn1W82rlLXtVG7nPIYR9Orn-4=/fit-in/200x150/filters:strip_icc()/pic2576459.jpg"
               alt="The Resistance"
             />
-            <!-- <h3>The Resistance</h3> -->
             <p>Status: <span class="available">Available</span></p>
             <a href="#contact"><button>Rent now</button></a>
           </div>
@@ -200,7 +195,6 @@
               src="https://cf.geekdo-images.com/665Ply7Ho1WVf1v1iZlWeg__thumb/img/BKnSb6kAhpVFHV8cyUXrs3EF_dw=/fit-in/200x150/filters:strip_icc()/pic3283110.png"
               alt="Santorini"
             />
-            <!-- <h3>Santorini</h3> -->
             <p>Status: <span class="available">Available</span></p>
             <a href="#contact"><button>Rent now</button></a>
           </div>
@@ -209,7 +203,6 @@
               src="https://cf.geekdo-images.com/PZt3EAAGV3dFIVuwMR0AEw__thumb/img/1m4aryOW1MOpq-8jGkF6gDTJmCY=/fit-in/200x150/filters:strip_icc()/pic3525224.jpg"
               alt="Sagrada"
             />
-            <!-- <h3>Sagrada</h3> -->
             <p>Status: <span class="available">Available</span></p>
             <a href="#contact"><button>Rent now</button></a>
           </div>
@@ -218,7 +211,6 @@
               src="https://cf.geekdo-images.com/VHiB06XHhK6G3vxH9QAwHw__thumb/img/gl0OYJ3Lt-dMcVGfpgXnHyvVMzQ=/fit-in/200x150/filters:strip_icc()/pic5169196.jpg"
               alt="Sheriff of Nottingham: 2nd Edition"
             />
-            <!-- <h3>Sheriff of Nottingham: 2nd Edition</h3> -->
             <p>Status: <span class="rented">Rented</span></p>
             <a href="#contact"><button>Reserve for later</button></a>
           </div>
@@ -245,7 +237,7 @@
           </p>
         </div>
 
-        <img src="./assets/img/perfil.png" alt="Foto do desenvolvedor" />
+        <img src="./assets/img/perfil.png" alt="Webpage developer picture" />
       </div>
     </section>
 
@@ -283,7 +275,10 @@
           </div>
         </div>
 
-        <img src="./assets/img/bg-collection.avif" alt="Boardgame collection" />
+        <img
+          src="./assets/img/bg-collection.avif"
+          alt="Gif with boardgame shelves being emptied and filled"
+        />
       </div>
     </section>
 
@@ -302,8 +297,7 @@
           <h4>Fill in our form to sell or register games for renting</h4>
         </div>
 
-        <form action="#" method="post">
-          <!-- <div class="title">Welcome</div> -->
+        <form action="#home" method="post">
           <div class="subtitle">Are you interested in selling or renting?</div>
 
           <div class="input-container ic">
@@ -321,24 +315,26 @@
               class="input"
               type="text"
               placeholder=" "
-              pattern="[A-Za-z]{#}"
+              pattern="[A-Za-z]{2,}"
               required
             />
             <div class="cut"></div>
             <label for="firstname" class="placeholder">First name</label>
           </div>
+
           <div class="input-container ic">
             <input
               id="lastname"
               class="input"
               type="text"
               placeholder=" "
-              pattern="[A-Za-z]{#}"
+              pattern="[A-Za-z]{2,}"
               required
             />
             <div class="cut"></div>
             <label for="lastname" class="placeholder">Last name</label>
           </div>
+
           <div class="input-container ic">
             <input
               id="email"
@@ -353,18 +349,6 @@
           </div>
 
           <div class="input-container ic">
-            <!-- <textarea
-                id="games"
-                class="input"
-                placeholder=" "
-                required
-                style="padding-top: 0.5rem"
-              ></textarea>
-              <div class="cut"></div>
-              <label for="games" class="placeholder"
-                >List the name of your games...</label
-              > -->
-
             <input id="games" class="input" type="text" placeholder=" " />
             <div class="cut"></div>
             <label for="games" class="placeholder">Name of your games</label>
